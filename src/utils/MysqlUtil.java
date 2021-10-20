@@ -97,9 +97,9 @@ public class MysqlUtil {
         int i=0;
       //  String sql="delete from employee where name=?";
         DBConnection db = new DBConnection();
-        try {    
+        try{
             PreparedStatement preStmt = (PreparedStatement) db.conn.prepareStatement(sql);
-         
+
             preStmt.executeUpdate();
             
             preStmt.close();

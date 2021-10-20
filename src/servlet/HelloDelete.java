@@ -38,13 +38,9 @@ public class HelloDelete extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("application/json; charset=utf-8");
-		
+		//获取ajax请求发来的信息
 		String pno = request.getParameter("pno");
-		
-		
 		String sqlDel = "delete from Person where pno="+pno;
-		
-		
 		int message = MysqlUtil.del(sqlDel);
 		String rep = "";
 		if(message == 1) {

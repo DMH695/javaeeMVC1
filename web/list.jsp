@@ -179,8 +179,9 @@
   }
 
   function del() {
+    //获取用户传入来的值
     var pno = $("#pno_del").val();
-
+    //将pno发送给后端
     $.ajax({
       type : "post",
       url : "HelloDelete",
