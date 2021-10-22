@@ -129,7 +129,6 @@
         }
       },
       error:function (XMLHttpRequest, textStatus, errorThrown) {
-
         alert(typeof(errorThrown));
       }
 
